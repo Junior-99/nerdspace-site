@@ -88,6 +88,7 @@ function render() {
     !state?.webEnabled ||
     !auth.currentUser.emailVerified ||
     state?.blockedByAdmin ||
+    state?.purchaseBlocked ||
     !el("consent").checked;
   el("manage").hidden = !manager;
   el("manage").disabled = busy;
