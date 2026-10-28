@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="NerdSpace/Orbit N" clip-path="url(#clip0_0_36)">
+<path id="Vector" d="M43.9388 14.7024C47.4399 22.2105 41.3512 32.4597 30.3393 37.5946C19.3274 42.7295 7.56231 40.8057 4.06123 33.2976C0.560144 25.7895 6.64885 15.5403 17.6607 10.4054C28.6726 5.27046 40.4377 7.1943 43.9388 14.7024Z" stroke-width="1.8" stroke="#EF8FFF"/>
+<path id="Vector_2" d="M16 31V17L31 31V17" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" stroke="#FAF6FF"/>
+<path id="Vector_3" d="M36 4L38 9L43 11L38 13L36 18L34 13L29 11L34 9L36 4Z" fill="#EF8FFF"/>
+</g>
+<defs>
+<clipPath id="clip0_0_36">
+<rect width="48" height="48" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="NerdSpace Plus annual subscription and renewal management."
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>Plus annual · NerdSpace</title>
+    <link rel="icon" href="../assets/logo.svg" />
+    <link rel="stylesheet" href="../assets/site.css" />
+    <style>
+      .checkout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 56px;
+        padding: 70px 0 80px;
+        align-items: start;
+      }
+      .checkout h1 {
+        font-size: clamp(38px, 5vw, 64px);
+      }
+      .checkout .panel {
+        padding: 28px;
+        border: 1px solid var(--line);
+        background: linear-gradient(140deg, #ffffff0c, #ffffff03);
+        border-radius: 28px;
+        backdrop-filter: blur(20px);
+      }
+      .checkout label {
+        display: block;
+        font-size: 13px;
+        color: var(--ink);
+        margin: 18px 0 6px;
+      }
+      .checkout input:not([type="checkbox"]) {
+        display: block;
+        width: 100%;
+        padding: 14px 16px;
+        border-radius: 16px;
+        border: 1px solid #ffffff30;
+        background: #151526;
+        color: var(--ink);
+        font: inherit;
+        font-size: 15px;
+      }
+      .checkout input:focus-visible,
+      .checkout button:focus-visible {
+        outline: 2px solid #bacaff;
+        outline-offset: 3px;
+      }
+      .checkout .pill {
+        border: 0;
+        cursor: pointer;
+        min-height: 46px;
+        font: inherit;
+        font-size: 13px;
+      }
+      .checkout .secondary {
+        border: 1px solid #ffffff30;
+      }
+      .checkout button:disabled {
+        opacity: 0.48;
+        cursor: default;
+      }
+      .checkout .actions {
+        gap: 10px;
+        margin-top: 22px;
+      }
+      .checkout .annual-total {
+        font-size: 42px;
+        line-height: 1.2;
+        letter-spacing: -2px;
+        color: var(--ink);
+        font-weight: 750;
+        margin: 24px 0 10px;
+      }
+      .checkout ul {
+        padding-left: 20px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .checkout .fine {
+        font-size: 12px;
+        line-height: 1.7;
+      }
+      .checkout .consent {
+        display: flex;
+        gap: 11px;
+        align-items: flex-start;
+        font-size: 12px;
+        line-height: 1.8;
+        cursor: pointer;
+      }
+      .checkout .consent input {
+        margin-top: 5px;
+        accent-color: #b7b7ff;
+        width: 18px;
+        height: 18px;
+        flex: none;
+      }
+      .checkout .status {
+        padding: 14px 16px;
+        border: 1px solid #c4b8ff50;
+        border-radius: 16px;
+        background: #c4b8ff0c;
+        font-size: 13px;
+        color: var(--ink);
+        overflow-wrap: anywhere;
+      }
+      .checkout .status:empty {
+        display: none;
+      }
+      .checkout .error {
+        border-color: #ffb89670;
+        color: #ffd5bc;
+      }
+      .checkout .text-action {
+        border: 0;
+        background: transparent;
+        color: var(--accent);
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        cursor: pointer;
+        padding: 14px 0;
+        min-height: 44px;
+      }
+      .checkout [hidden] {
+        display: none !important;
+      }
+      @media (max-width: 740px) {
+        .checkout {
+          grid-template-columns: 1fr;
+          gap: 24px;
+          padding-top: 36px;
+        }
+        .checkout .panel {
+          padding: 23px;
+        }
+        .checkout h1 {
+          margin-top: 16px;
+        }
+        .checkout .annual-total {
+          font-size: 36px;
+        }
+      }
+    </style>
+    <script type="module">
+      import("../assets/plus.js").catch(() => {
+        document.getElementById("initial-loading").textContent = "The secure account connection could not load. Check your network, reload this page, or contact billing support. No payment was started.";
+      });
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header>
+      <nav class="wrap" aria-label="Main">
+        <a class="brand" href="../"
+          ><img
+            src="../assets/logo.svg"
+            alt=""
+            width="38"
+            height="38"
+          />nerdspace</a
+        >
+        <div class="links">
+          <a href="../support/">Support</a><a href="../privacy/">Privacy</a
+          ><a href="../community/">Terms</a>
+        </div>
+      </nav>
+    </header>
+    <main class="wrap checkout" id="main">
+      <section>
+        <span class="eyebrow">NERDSPACE PLUS / ANNUAL</span>
+        <h1>A whole year.<br />Your whole universe.</h1>
+        <p class="lead">
+          Create fandom rooms. Share longer theories, more images, and voice
+          replies with an editable transcript.
+        </p>
+        <ul>
+          <li>Create and manage your own rooms</li>
+          <li>Higher post, reply and media limits</li>
+          <li>Plus badge and relevant account recommendations</li>
+        </ul>
+        <div class="annual-total">
+          GHS 139.80
+          <span style="font-size: 17px; letter-spacing: 0; font-weight: 400"
+            >/ year</span
+          >
+        </div>
+        <p class="fine">
+          One annual payment, renewed automatically each year until canceled.
+          This fixed web price was set from the US$12 annual base price. There
+          is no monthly plan. Mobile stores show their own localized annual
+          price and taxes.
+        </p>
+        <p class="fine">
+          Already subscribed with Apple or Google? Manage renewal in that store,
+          or restore purchases in the installed NerdSpace app. Your account uses
+          the same Plus access across platforms.
+        </p>
+        <p class="fine">
+          <a href="../community/">Subscription terms</a> ·
+          <a href="../privacy/">Privacy policy</a> ·
+          <a href="../support/">Billing support</a>
+        </p>
+      </section>
+      <section class="panel" aria-label="Your Plus account">
+        <div id="initial-loading"><p>Connecting securely to NerdSpace…</p></div>
+        <form id="login-form" hidden>
+          <h2>Welcome back.</h2>
+          <p class="fine">
+            Sign in with your existing, email-verified NerdSpace account. Your
+            payment is linked to this account.
+          </p>
+          <label for="email">Email</label
+          ><input
+            id="email"
+            type="email"
+            autocomplete="username"
+            inputmode="email"
+            required
+            maxlength="254"
+          />
+          <label for="password">Password</label
+          ><input
+            id="password"
+            type="password"
+            autocomplete="current-password"
+            required
+            minlength="12"
+            maxlength="128"
+          />
+          <div class="actions">
+            <button class="pill" type="submit">Sign in</button
+            ><button class="text-action" id="reset" type="button">
+              Forgot password?
+            </button>
+          </div>
+          <p class="fine">
+            New here? Create your account in the NerdSpace mobile app first.
+          </p>
+        </form>
+        <div id="account" hidden>
+          <span class="eyebrow">YOUR MEMBERSHIP</span>
+          <h2 id="account-title" style="margin-top: 12px">
+            Your annual chapter
+          </h2>
+          <p id="account-email" class="fine"></p>
+          <p id="access-description"></p>
+          <label class="consent" id="consent-row" for="consent"
+            ><input type="checkbox" id="consent" /><span
+              >I agree to the <a href="../community/">subscription terms</a> and
+              understand that GHS 139.80 is charged now and each year until I
+              cancel. Paystack processes card details securely.</span
+            ></label
+          >
+          <div class="actions">
+            <button class="pill" id="subscribe" disabled>
+              Subscribe annually · GHS 139.80</button
+            ><button class="pill secondary" id="manage" hidden>
+              Manage renewal</button
+            ><button class="pill secondary" id="refresh">Refresh access</button>
+          </div>
+          <p class="fine" style="margin-top: 18px">
+            Cancel renewal before the next charge using Manage renewal.
+            Canceling keeps access through the paid period. Deleting your
+            NerdSpace account does not cancel a subscription. Never send
+            passwords or card details to support.
+          </p>
+          <button class="text-action" id="signout">Sign out</button>
+        </div>
+        <p id="feedback" class="status" role="status" aria-live="polite"></p>
+        <noscript
+          ><p>
+            JavaScript is required for secure account sign-in and checkout. You
+            can also subscribe through the installed NerdSpace app.
+          </p></noscript
+        >
+      </section>
+    </main>
+    <footer>
+      <div class="wrap foot">
+        <span>© 2026 NerdSpace · Theophilus Mensah</span>
+        <div>
+          <a href="../support/">Help with a purchase</a
+          ><a href="../delete-account/">Delete account</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
